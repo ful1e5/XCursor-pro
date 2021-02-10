@@ -4,10 +4,10 @@
 from typing import Dict, List, Tuple
 
 # Info
-THEME_NAME = "macOSBigSur"
-COMMENT = "macOS Big Sur Pointers"
+THEME_NAME = "XCursor-Pro"
+COMMENT = "XCursor Pro Pointers"
 AUTHOR = "Kaiz Khatri"
-URL = "https://github.com/ful1e5/apple_cursor"
+URL = "https://github.com/ful1e5/XCursor-Pro"
 
 # XCursor
 X_DELAY: int = 10
