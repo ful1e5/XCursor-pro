@@ -1,0 +1,182 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200px"
+    height="200px"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="xMidYMid"
+>
+<defs>
+    <filter
+            id="filter0_d"
+            x="0"
+            y="0"
+            width="198"
+            height="198"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+        >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+            />
+        <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+            />
+        <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+            />
+    </filter>
+
+    <filter
+            id="ldio-b5nfof6ak6-filter"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%"
+            color-interpolation-filters="sRGB"
+        >
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3.6" />
+        <feComponentTransfer result="cutoff">
+          <feFuncA type="table" tableValues="0 0 0 0 0 0 1 1 1 1 1" />
+        </feComponentTransfer>
+    </filter>
+
+</defs>
+
+<g filter="url(#filter0_d)">
+    <rect x="5" y="5" width="90" height="90" rx="30" fill="white" />
+</g>
+<g>
+    <g filter="url(#ldio-b5nfof6ak6-filter)">
+        <g transform="translate(50 50)">
+            <g>
+              <circle cx="26" cy="0" r="5" fill="#3be8b0">
+                <animate
+                            attributeName="r"
+                            keyTimes="0;0.5;1"
+                            values="5.3999999999999995;12.6;5.3999999999999995"
+                            dur="2s"
+                            repeatCount="1"
+                            begin="-0.25s"
+                        />
+              </circle>
+              <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        keyTimes="0;1"
+                        values="0;360"
+                        dur="2s"
+                        repeatCount="1"
+                        begin="0s"
+                    />
+            </g>
+        </g>
+        <g transform="translate(50 50)">
+            <g>
+              <circle cx="26" cy="0" r="5" fill="#1aafd0">
+                <animate
+                            attributeName="r"
+                            keyTimes="0;0.5;1"
+                            values="5.3999999999999995;12.6;5.3999999999999995"
+                            dur="1s"
+                            repeatCount="2"
+                            begin="-0.2s"
+                        />
+              </circle>
+              <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        keyTimes="0;1"
+                        values="0;360"
+                        dur="1s"
+                        repeatCount="2"
+                        begin="-0.05s"
+                    />
+            </g>
+        </g>
+        <g transform="translate(50 50)">
+            <g>
+              <circle cx="26" cy="0" r="5" fill="#6a67ce">
+                <animate
+                            attributeName="r"
+                            keyTimes="0;0.5;1"
+                            values="5.3999999999999995;12.6;5.3999999999999995"
+                            dur="0.66666666666667s"
+                            repeatCount="3"
+                            begin="-0.15s"
+                        />
+              </circle>
+              <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        keyTimes="0;1"
+                        values="0;360"
+                        dur="0.66666666666667s"
+                        repeatCount="3"
+                        begin="-0.1s"
+                    />
+            </g>
+        </g>
+        <g transform="translate(50 50)">
+            <g>
+              <circle cx="26" cy="0" r="5" fill="#ffb900">
+                <animate
+                            attributeName="r"
+                            keyTimes="0;0.5;1"
+                            values="5.3999999999999995;12.6;5.3999999999999995"
+                            dur="0.5s"
+                            repeatCount="4"
+                            begin="-0.1s"
+                        />
+              </circle>
+              <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        keyTimes="0;1"
+                        values="0;360"
+                        dur="0.5s"
+                        repeatCount="4"
+                        begin="-0.15s"
+                    />
+            </g>
+        </g>
+        <g transform="translate(50 50)">
+            <g>
+              <circle cx="26" cy="0" r="5" fill="#fc636b">
+                <animate
+                            attributeName="r"
+                            keyTimes="0;0.5;1"
+                            values="5.3999999999999995;12.6;5.3999999999999995"
+                            dur="0.4s"
+                            repeatCount="5"
+                            begin="-0.05s"
+                        />
+              </circle>
+              <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        keyTimes="0;1"
+                        values="0;360"
+                        dur="0.4s"
+                        repeatCount="5"
+                        begin="-0.2s"
+                    />
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
