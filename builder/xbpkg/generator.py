@@ -8,8 +8,8 @@ from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
 
-from applbuild.constants import AUTHOR, COMMENT, THEME_NAME, URL
-from applbuild.symlinks import add_missing_xcursor
+from xbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
+from xbpkg.symlinks import add_missing_xcursor
 
 
 def xbuild(
