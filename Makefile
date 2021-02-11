@@ -1,4 +1,4 @@
-theme := macOSBigSur
+theme := XCursor-Pro
 src := ./themes/$(theme)
 
 local := ~/.icons
@@ -30,7 +30,7 @@ build: bitmaps
 SHELL:=/bin/bash
 
 
-install: themes/macOSBigSur
+install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
 		@echo "> Installing '$(theme)' cursors inside $(local)/..."
 		@mkdir -p $(local)

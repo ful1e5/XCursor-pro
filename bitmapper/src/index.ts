@@ -105,7 +105,7 @@ const main = async () => {
       if (index > 1) {
         // @ts-ignore
         const diff = matchImages(prevImg, img);
-        if (diff <= 100) {
+        if (diff <= 100 && index > 40) {
           breakRendering = !breakRendering;
         }
       }
