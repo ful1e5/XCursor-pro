@@ -33,7 +33,7 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "dnd_no_drop.png": {"xhot": 100, "yhot": 100},
     "dotbox.png": {"xhot": 100, "yhot": 100},
     "hand1.png": {"xhot": 103, "yhot": 56},
-    "hand2.png": {"xhot": 31, "yhot": 86},
+    "hand2.png": {"xhot": 78, "yhot": 26},
     "left_ptr.png": {"xhot": 51, "yhot": 24},
     "left_side.png": {"xhot": 100, "yhot": 100},
     "left_tee.png": {"xhot": 100, "yhot": 100},
