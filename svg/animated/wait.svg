@@ -72,7 +72,7 @@
             repeatCount="4"
             values="0 50 50;360 50 50"
             keyTimes="0;1"
-            dur="0.5102040816326531s"
+            dur="0.127551020408s"
           />
       </path>
       <path
@@ -85,7 +85,7 @@
             repeatCount="1"
             values="0 50 50;360 50 50"
             keyTimes="0;1"
-            dur="2.0408163265306123s"
+            dur="0.510204081635s"
           />
       </path>
     </g>

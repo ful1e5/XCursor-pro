@@ -49,3 +49,5 @@ uninstall:
 		@echo "> Removing '$(root_dest)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
+
+reinstall: uninstall install

@@ -10,7 +10,7 @@ AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/XCursor-Pro"
 
 # XCursor
-X_DELAY: int = 10
+X_DELAY: int = 25
 
 
 # Windows Cursor
@@ -32,15 +32,15 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "crosshair.png": {"xhot": 100, "yhot": 100},
     "dnd_no_drop.png": {"xhot": 100, "yhot": 100},
     "dotbox.png": {"xhot": 100, "yhot": 100},
-    "hand1.png": {"xhot": 102, "yhot": 54},
-    "hand2.png": {"xhot": 75, "yhot": 25},
+    "hand1.png": {"xhot": 103, "yhot": 56},
+    "hand2.png": {"xhot": 31, "yhot": 86},
     "left_ptr.png": {"xhot": 51, "yhot": 24},
     "left_side.png": {"xhot": 100, "yhot": 100},
     "left_tee.png": {"xhot": 100, "yhot": 100},
     "link.png": {"xhot": 120, "yhot": 55},
     "ll_angle.png": {"xhot": 100, "yhot": 100},
     "lr_angle.png": {"xhot": 100, "yhot": 100},
-    "move.png": {"xhot": 78, "yhot": 79},
+    "move.png": {"xhot": 102, "yhot": 73},
     "pencil.png": {"xhot": 81, "yhot": 117},
     "plus.png": {"xhot": 98, "yhot": 100},
     "question_arrow.png": {"xhot": 51, "yhot": 24},
