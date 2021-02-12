@@ -7,6 +7,50 @@
     💅 Modern X11 Cursor Theme
 </p>
 
+<!-- Badges -->
+<p align="center">
+  <!-- First Row -->
+  <a href="https://github.com/ful1e5/XCursor-pro/actions">
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/XCursor-pro/workflows/build/badge.svg" width="102" />
+  </a>
+
+  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
+    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
+  </a>
+
+  <a href="https://github.com/ful1e5/clickgen">
+    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
+  </a>
+
+  <!-- Second Row -->
+  <br />
+  <a href="https://github.com/ful1e5/XCursor-pro/releases">
+    <img alt="XCursor Pro release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/XCursor-pro?include_prereleases" />
+  </a>
+
+  <a href="https://github.com/ful1e5/XCursor-pro/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/ful1e5/XCursor-pro?color=0081FB" />
+  </a>
+
+  <br />
+  <a href="https://www.pling.com/p/1481466#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
+  </a>
+
+  <a href="https://www.pling.com/p/1481466#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
+  </a>
+
+  <a href="https://www.python.org/">
+    <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
+  </a>
+ <!-- Fourth Row -->
+  <br />
+  <a href="https://github.com/ful1e5">
+    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
+  </a>
+</p>
+
 ---
 
 <!-- Intro -->
