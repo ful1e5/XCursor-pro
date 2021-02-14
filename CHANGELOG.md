@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+-   Clean builder package cache in `builder/Makefile` **clean** target
+
 ## [v1.0.0] - 12 Feb 2021
 
 ### Added

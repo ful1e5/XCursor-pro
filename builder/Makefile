@@ -11,7 +11,7 @@ WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
 clean:
-	@rm -rf applbuild.egg-info build dist
+	@rm -rf gbpkg.egg-info build dist
 	@find -iname "*.pyc" -delete
 
 	# Removing setup.py package files if installed
