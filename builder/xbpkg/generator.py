@@ -16,9 +16,9 @@ def xbuild(
     config: Dict[str, Dict[str, Any]],
     x_out_dir: Path,
 ) -> None:
-    """Build `macOSBigSur` cursor theme for only `X11`(UNIX) platform.
+    """Build `XCursor-Pro` cursor theme for only `X11`(UNIX) platform.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `XCursor-Pro` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
     """
@@ -39,9 +39,9 @@ def xbuild(
 
 
 def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
-    """Build `macOSBigSur` cursor theme for only `Windows` platforms.
+    """Build `XCursor-Pro` cursor theme for only `Windows` platforms.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `XCursor-Pro` configuration.
 
     :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
     """
@@ -74,9 +74,9 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
 def build(
     config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path
 ) -> None:
-    """Build `macOSBigSur` cursor theme for `X11` & `Windows` platforms.
+    """Build `XCursor-Pro` cursor theme for `X11` & `Windows` platforms.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `XCursor-Pro` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
 
