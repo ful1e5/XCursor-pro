@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 -   Clean builder package cache in `builder/Makefile` **clean** target
+-   Corner resize cursors are inverted fixed (ful1e5/apple_cursor#39 **merged**)
 
 ## [v1.0.0] - 12 Feb 2021
 
