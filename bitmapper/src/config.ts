@@ -6,22 +6,21 @@ interface Config {
 }
 
 const black = "#000000";
-const blue = "#4285F4";
 const white = "#FFFFFF";
 
 const config: Config[] = [
 	{
-		themeName: "GoogleDot-Blue",
+		themeName: "XCursor-Pro-Dark",
 		color: {
-			base: blue,
+			base: black,
 			outline: white,
 		},
 	},
 	{
-		themeName: "GoogleDot-Black",
+		themeName: "XCursor-Pro-Light",
 		color: {
-			base: black,
-			outline: white,
+			base: white,
+			outline: black,
 		},
 	},
 ];
