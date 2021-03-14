@@ -1,12 +1,3 @@
-theme := XCursor-Pro
-src := ./themes/$(theme)
-
-local := ~/.icons
-local_dest := $(local)/$(theme)
-
-root := /usr/share/icons
-root_dest := $(root)/$(theme)
-
 all: clean render build
 
 unix: clean render bitmaps
@@ -30,23 +21,30 @@ build: bitmaps
 SHELL:=/bin/bash
 
 
+src = ./themes/XCursor-Pro-*
+local := ~/.icons
+local_dest := $(local)/XCursor-Pro-*
+
+root := /usr/share/icons
+root_dest := $(root)/XCursor-Pro-*
+
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing '$(theme)' cursors inside $(local)/..."
+		@echo "> Installing 'XCursor-Pro' cursors inside $(local)/..."
 		@mkdir -p $(local)
-		@cp -r $(src) $(local_dest) && echo "> Installed!"
+		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing '$(theme)' cursors inside $(root)/..."
+		@echo "> Installing 'XCursor-Pro' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r $(src) $(root_dest) && echo "> Installed!"
+		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing '$(local_dest)'..."
+		@echo "> Removing 'XCursor-Pro' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing '$(root_dest)'..."
+		@echo "> Removing 'XCursor-Pro' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 

@@ -98,8 +98,8 @@ sudo mv XCursor-Pro /usr/share/icons/
 
 #### Windows
 
-1. unzip `XCursor-Pro_Windows.zip` file
-2. Open `XCursor-Pro_Windows/` in Explorer, and **right click** on `install.inf`.
+1. unzip `.zip` file
+2. Open `unziped` directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **XCursor-Pro Cursors**.
 5. Click '**Apply**'.
@@ -111,9 +111,15 @@ sudo mv XCursor-Pro /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="XCursor Pro" src="https://i.imgur.com/NvcbQH8.png">
+  <img title="XCursor Pro Dark" src="https://i.imgur.com/NvcbQH8.png">
   </br>
-  <sub>XCursor Pro Cursors</sub>
+  <sub>XCursor Pro Dark Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="XCursor Pro Light" src="https://imgur.com/UI3TO1Z.png">
+  </br>
+  <sub>XCursor Pro Light Cursors</sub>
 </p>
 
 <!-- Build Dependencies -->
@@ -122,9 +128,9 @@ sudo mv XCursor-Pro /usr/share/icons/
 
 ## External Libraries
 
--   libxcursor
--   libx11
--   libpng (<=1.6)
+- libxcursor
+- libx11
+- libpng (<=1.6)
 
 #### Install External Libraries
 
@@ -155,22 +161,22 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build Dependencies
 
--   [gcc](https://gcc.gnu.org/install/)
--   [make](https://www.gnu.org/software/make/)
--   [nodejs](https://nodejs.org/en/) (<=12.x.x)
--   [yarn](https://classic.yarnpkg.com/en/docs/install/)
--   [python](https://www.python.org/downloads/) (<=3.8)
--   [pip3](https://pip.pypa.io/en/stable/installing/)
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.8)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
--   [puppeteer](https://www.npmjs.com/package/puppeteer)
--   [pngjs](https://www.npmjs.com/package/pngjs)
--   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
--   [clickgen](https://pypi.org/project/clickgen/s)
+- [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 

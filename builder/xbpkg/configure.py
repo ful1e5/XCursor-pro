@@ -17,7 +17,7 @@ def to_tuple(x: X) -> Tuple[X, X]:
 
 
 def get_config(bitmaps_dir: Union[str, Path], **kwargs) -> Dict[str, Any]:
-    """Return configuration of `macOSBigSur` pointers.
+    """Return configuration of `XCursor-Pro` pointers.
 
     Args:
 
