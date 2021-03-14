@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="xbpkg",
-    version="1.0.0",
+    version="1.1.0",
     description="Generate 'XCursorPro' cursor theme from PNGs file",
     url="https://github.com/ful1e5/XCursor-pro",
     packages=["xbpkg"],
