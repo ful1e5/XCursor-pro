@@ -1,4 +1,3 @@
-bitmaps_dir = "../bitmaps"
 
 all: clean setup build
 
@@ -12,7 +11,7 @@ WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
 clean:
-	@rm -rf gbpkg.egg-info build dist
+	@rm -rf applbuild.egg-info build dist
 	@find -iname "*.pyc" -delete
 
 	# Removing setup.py package files if installed
@@ -26,14 +25,11 @@ setup: setup.py
 	@. venv/bin/activate; python3 setup.py install --record files.txt
 
 build: setup build.py
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@. venv/bin/activate; python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 
 build_unix: setup build.py
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES)
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES)
+	@. venv/bin/activate; python3 build.py unix --xsizes $(X_SIZES)
 
 build_windows: setup build.py
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Dark" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Light" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@. venv/bin/activate; python3 build.py windows --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 

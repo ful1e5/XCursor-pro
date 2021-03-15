@@ -2,28 +2,25 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-from typing import Any, Dict, NamedTuple
+from typing import Any, Dict
 
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-from xbpkg.constants import AUTHOR, URL
+
+from xbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
 from xbpkg.symlinks import add_missing_xcursor
 
 
-class Info(NamedTuple):
-    name: str
-    comment: str
+def xbuild(
+    config: Dict[str, Dict[str, Any]],
+    x_out_dir: Path,
+) -> None:
+    """Build `macOSBigSur` cursor theme for only `X11`(UNIX) platform.
 
-
-def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> None:
-    """Build `XCursor-Pro` cursor theme for only `X11`(UNIX) platform.
-
-    :config: (Dict) `XCursor-Pro` configuration.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
-
-    :info: (Dict) Content theme name & comment
     """
 
     for _, item in config.items():
@@ -38,17 +35,15 @@ def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> No
             XCursor.create(x_cfg, x_out_dir)
 
     add_missing_xcursor(x_out_dir / "cursors")
-    XPackager(x_out_dir, info.name, info.comment)
+    XPackager(x_out_dir, THEME_NAME, COMMENT)
 
 
-def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> None:
-    """Build `XCursor-Pro` cursor theme for only `Windows` platforms.
+def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
+    """Build `macOSBigSur` cursor theme for only `Windows` platforms.
 
-    :config: (Dict) `XCursor-Pro` configuration.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
-
-    :info: (Dict) Content theme name & comment
     """
 
     for _, item in config.items():
@@ -73,21 +68,19 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> 
                 print(f"Building '{win_cfg.stem}' Windows Cursor...")
                 WindowsCursor.create(win_cfg, win_out_dir)
 
-    WindowsPackager(win_out_dir, info.name, info.comment, AUTHOR, URL)
+    WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
 
 
 def build(
-    config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path, info: Info
+    config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path
 ) -> None:
-    """Build `XCursor-Pro` cursor theme for `X11` & `Windows` platforms.
+    """Build `macOSBigSur` cursor theme for `X11` & `Windows` platforms.
 
-    :config: (Dict) `XCursor-Pro` configuration.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
 
     :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
-
-    :info: (Dict) Content theme name & comment
     """
 
     def win_build(item: Dict[str, Any], alias: CursorAlias) -> None:
@@ -118,6 +111,6 @@ def build(
                 win_build(item, alias)
 
     add_missing_xcursor(x_out_dir / "cursors")
-    XPackager(x_out_dir, info.name, info.comment)
+    XPackager(x_out_dir, THEME_NAME, COMMENT)
 
-    WindowsPackager(win_out_dir, info.name, info.comment, AUTHOR, URL)
+    WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)

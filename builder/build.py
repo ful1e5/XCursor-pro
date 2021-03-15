@@ -5,7 +5,7 @@ import argparse
 from pathlib import Path
 
 from xbpkg.configure import get_config
-from xbpkg.generator import xbuild, wbuild, build, Info
+from xbpkg.generator import xbuild, wbuild, build
 
 parser = argparse.ArgumentParser(
     prog="xcursor_pro_builder",
@@ -95,17 +95,9 @@ parser.add_argument(
 args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir)
-name = bitmaps_dir.stem
 
-comments = {
-    "XCursor-Pro-Dark": "Modern & Dark X11 Cursor Theme",
-    "XCursor-Pro-Light": "Modern & Light X11 Cursor Theme",
-}
-
-x_out_dir = Path(args.out_dir) / name
-win_out_dir = Path(args.out_dir) / f"{name}-Windows"
-
-print(f"Getting '{name}' bitmaps ready for build...")
+x_out_dir = Path(args.out_dir) / "XCursor-Pro"
+win_out_dir = Path(args.out_dir) / "XCursor-Pro_Windows"
 
 config = get_config(
     bitmaps_dir,
@@ -114,11 +106,9 @@ config = get_config(
     win_size=args.win_size,
 )
 
-info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
-
 if args.platform == "unix":
-    xbuild(config, x_out_dir, info)
+    xbuild(config, x_out_dir)
 elif args.platform == "windows":
-    wbuild(config, win_out_dir, info)
+    wbuild(config, win_out_dir)
 else:
-    build(config, x_out_dir, win_out_dir, info)
+    build(config, x_out_dir, win_out_dir)

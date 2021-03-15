@@ -1,28 +1,23 @@
-import { Colors } from "./core/types";
+import path from "path";
+import { readdirSync, existsSync } from "fs";
 
-interface Config {
-	themeName: string;
-	color: Colors;
+// Directory resolve
+const projectRoot = path.resolve(__dirname, "../../");
+
+const outDir = path.resolve(projectRoot, "bitmaps");
+const staticSvgDir = path.resolve(projectRoot, "svg", "static");
+const animatedSvgDir = path.resolve(projectRoot, "svg", "animated");
+
+// Generate a svg list
+if (!existsSync(staticSvgDir) || !existsSync(animatedSvgDir)) {
+  throw new Error("svg directory not found");
 }
 
-const black = "#000000";
-const white = "#FFFFFF";
+const staticCursors = readdirSync(staticSvgDir).map((f) =>
+  path.resolve(staticSvgDir, f)
+);
+const animatedCursors = readdirSync(animatedSvgDir).map((f) =>
+  path.resolve(animatedSvgDir, f)
+);
 
-const config: Config[] = [
-	{
-		themeName: "XCursor-Pro-Dark",
-		color: {
-			base: black,
-			outline: white,
-		},
-	},
-	{
-		themeName: "XCursor-Pro-Light",
-		color: {
-			base: white,
-			outline: black,
-		},
-	},
-];
-
-export { config };
+export { staticCursors, animatedCursors, outDir };
