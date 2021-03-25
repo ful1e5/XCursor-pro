@@ -23,7 +23,7 @@ clean:
 	@fi
 
 setup: setup.py
-	@python3 setup.py install --record files.txt
+	@python3 setup.py install --user --record files.txt
 
 build: setup build.py
 	@$(foreach theme,$(THEMES), python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-$(theme)" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
