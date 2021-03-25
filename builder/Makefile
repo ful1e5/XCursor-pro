@@ -22,18 +22,17 @@ clean:
 	@fi
 
 setup: setup.py
-	@test -d venv || virtualenv venv
-	@. venv/bin/activate; python3 setup.py install --record files.txt
+	@python3 setup.py install --record files.txt
 
 build: setup build.py
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 
 build_unix: setup build.py
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES)
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES)
+	@python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES)
+	@python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES)
 
 build_windows: setup build.py
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Dark" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Light" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Dark" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Light" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 
