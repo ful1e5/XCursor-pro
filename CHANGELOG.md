@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **2 Space** format in `bitmapper`
+- clickgen typing inside `xbpkg/generator.py`
+- Use `sphinx` docsstring style inside `xbpkg`
 
 ### Changed
 
@@ -43,4 +45,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.0...main
 [v1.1.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.0.0...v1.1.0
+[v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0
 [v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0

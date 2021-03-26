@@ -4,7 +4,7 @@
 from pathlib import Path
 from typing import Any, Dict, List, Tuple, TypeVar, Union
 
-from clickgen.util import LikePath, PNGProvider
+from clickgen.util import PNGProvider
 
 from xbpkg.constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
 
@@ -19,19 +19,19 @@ def to_tuple(x: X) -> Tuple[X, X]:
 def get_config(bitmaps_dir: Union[str, Path], **kwargs) -> Dict[str, Any]:
     """Return configuration of `XCursor-Pro` pointers.
 
-    Args:
+    :param bitmaps_dir: Path to .png file's directory.
+    :type bitmaps_dir: Union[str, Path]
 
-    :bitmaps_dir: (str | Path) Path to .png file's directory.
+    :param \**kwargs:
+            See below
 
-
-    Keywords Args:
-
-    :x_sizes: (List[int]) List of pixel-sizes for xcursors.
-
-    :win_canvas_size: (int) Windows cursor's canvas pixel-size.
-
-    :win_size: (int) Pixel-size for Windows cursor.
-
+        :Keyword Arguments:
+            * *x_sizes* (``List[int]``) --
+              List of pixel-sizes for xcursors.
+            * *win_canvas_size* (``int``) --
+              Windows cursor's canvas pixel-size.
+            * *win_size* (``int``) --
+              Pixel-size for Windows cursor.
 
     Example:
 

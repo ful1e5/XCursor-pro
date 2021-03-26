@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from typing import Dict, List, Union
 
-from clickgen.util import LikePath, chdir
+from clickgen.util import chdir
 
 
 def add_missing_xcursor(directory: Union[str, Path]) -> None:
@@ -161,7 +161,8 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
 
     with chdir(directory):
         for item in symlinks:
-            src = item.get("src")
-            for link in item.get("links"):
+            src = str(item["src"])
+            links = item["links"]
+            for link in links:
                 print(f"Creating symlink {src} -> {link}")
                 os.symlink(src, link)

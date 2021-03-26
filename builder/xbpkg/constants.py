@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Dict, List, Tuple
+from typing import Dict
 
 # Info
 THEME_NAME = "XCursor-Pro"
@@ -21,7 +21,7 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     # Static #
     ##########
     "all-scroll.png": {"xhot": 100, "yhot": 100},
-    "bottom_left_corner.png": {"xhot": 100, "yhot": 100},
+    "bottom_left_corne, List, Tupler.png": {"xhot": 100, "yhot": 100},
     "bottom_right_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_tee.png": {"xhot": 98, "yhot": 137},
     "center_ptr.png": {"xhot": 99, "yhot": 29},
