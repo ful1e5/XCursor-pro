@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **2 Space** format in `bitmapper`
+
 ### Changed
 
 - Remvove python3 **virtualenv** form `builder/Makefile`
