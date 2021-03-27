@@ -15,7 +15,7 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && $(MAKE)
+	@cd builder && make setup build clean
 
 .ONESHELL:
 SHELL:=/bin/bash
