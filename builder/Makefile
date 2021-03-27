@@ -7,12 +7,13 @@ all: clean setup build
 .ONESHELL:
 SHELL:=/bin/bash
 
+THEMES = Dark Light
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
 clean:
-	@rm -rf gbpkg.egg-info build dist
+	@rm -rf xbpkg.egg-info build dist
 	@find -iname "*.pyc" -delete
 
 	# Removing setup.py package files if installed
@@ -22,18 +23,14 @@ clean:
 	@fi
 
 setup: setup.py
-	@test -d venv || virtualenv venv
-	@. venv/bin/activate; python3 setup.py install --record files.txt
+	@python3 setup.py install --user --record files.txt
 
 build: setup build.py
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@$(foreach theme,$(THEMES), python3 build.py -p "$(bitmaps_dir)/XCursor-Pro-$(theme)" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
 
 build_unix: setup build.py
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Dark" --xsizes $(X_SIZES)
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-Light" --xsizes $(X_SIZES)
+	@$(foreach theme,$(THEMES), python3 build.py unix -p "$(bitmaps_dir)/XCursor-Pro-$(theme)" --xsizes $(X_SIZES);)
 
 build_windows: setup build.py
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Dark" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-Light" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@$(foreach theme,$(THEMES), python3 build.py windows -p "$(bitmaps_dir)/XCursor-Pro-$(theme)" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
 

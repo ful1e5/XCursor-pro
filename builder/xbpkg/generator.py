@@ -19,18 +19,23 @@ class Info(NamedTuple):
 def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> None:
     """Build `XCursor-Pro` cursor theme for only `X11`(UNIX) platform.
 
-    :config: (Dict) `XCursor-Pro` configuration.
+    :param config:  `XCursor-Pro` configuration.
+    :type config: Dict[str, Dict[str, Any]]
 
-    :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
+    :param x_out_dir: Path to the output directory, Where the `X11` cursor \
+            theme package will generate. It also creates a directory if \
+            not exists.
+    :type x_out_dir: Path
 
-    :info: (Dict) Content theme name & comment
+    :param info: Content theme name & comment
+    :type info: Info
     """
 
     for _, item in config.items():
-        png = item.get("png")
-        hotspot = item.get("hotspot")
-        x_sizes = item.get("x_sizes")
-        delay = item.get("delay")
+        png = item["png"]
+        hotspot = item["hotspot"]
+        x_sizes = item["x_sizes"]
+        delay = item["delay"]
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(x_sizes, delay)
@@ -44,28 +49,33 @@ def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> No
 def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> None:
     """Build `XCursor-Pro` cursor theme for only `Windows` platforms.
 
-    :config: (Dict) `XCursor-Pro` configuration.
+    :param config:  `XCursor-Pro` configuration.
+    :type config: Dict[str, Dict[str, Any]]
 
-    :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
+    :param win_out_dir: Path to the output directory, Where the `Windows` \
+            cursor theme package will generate. It also creates a directory \
+            if not exists.
+    :type win_out_dir: Path
 
-    :info: (Dict) Content theme name & comment
+    :param info: Content theme name & comment
+    :type info: Info
     """
 
     for _, item in config.items():
-        png = item.get("png")
-        hotspot = item.get("hotspot")
-        x_sizes = item.get("x_sizes")
-        delay = item.get("delay")
+        png = item["png"]
+        hotspot = item["hotspot"]
+        x_sizes = item["x_sizes"]
+        delay = item["delay"]
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             alias.create(x_sizes, delay)
 
             if item.get("win_key"):
-                position = item.get("position")
-                win_size = item.get("win_size")
-                win_key = item.get("win_key")
-                canvas_size = item.get("canvas_size")
-                win_delay = item.get("win_delay")
+                position = item["position"]
+                win_size = item["win_size"]
+                win_key = item["win_key"]
+                canvas_size = item["canvas_size"]
+                win_delay = item["win_delay"]
 
                 win_cfg = alias.reproduce(
                     win_size, canvas_size, position, delay=win_delay
@@ -81,21 +91,29 @@ def build(
 ) -> None:
     """Build `XCursor-Pro` cursor theme for `X11` & `Windows` platforms.
 
-    :config: (Dict) `XCursor-Pro` configuration.
+    :param config:  `XCursor-Pro` configuration.
+    :type config: Dict[str, Dict[str, Any]]
 
-    :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
+    :param x_out_dir: Path to the output directory, Where the `X11` cursor \
+            theme package will generate. It also creates a directory if \
+            not exists.
+    :type x_out_dir: Path
 
-    :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
+    :param win_out_dir: Path to the output directory, Where the `Windows` \
+            cursor theme package will generate. It also creates a directory \
+            if not exists.
+    :type win_out_dir: Path
 
-    :info: (Dict) Content theme name & comment
+    :param info: Content theme name & comment
+    :type info: Info
     """
 
     def win_build(item: Dict[str, Any], alias: CursorAlias) -> None:
-        position = item.get("position")
-        win_size = item.get("win_size")
-        win_key = item.get("win_key")
-        canvas_size = item.get("canvas_size")
-        win_delay = item.get("win_delay")
+        position = item["position"]
+        win_size = item["win_size"]
+        win_key = item["win_key"]
+        canvas_size = item["canvas_size"]
+        win_delay = item["win_delay"]
 
         win_cfg = alias.reproduce(
             win_size, canvas_size, position, delay=win_delay
@@ -104,10 +122,10 @@ def build(
         WindowsCursor.create(win_cfg, win_out_dir)
 
     for _, item in config.items():
-        png = item.get("png")
-        hotspot = item.get("hotspot")
-        x_sizes = item.get("x_sizes")
-        delay = item.get("delay")
+        png = item["png"]
+        hotspot = item["hotspot"]
+        x_sizes = item["x_sizes"]
+        delay = item["delay"]
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(x_sizes, delay)

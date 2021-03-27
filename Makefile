@@ -1,10 +1,10 @@
 all: clean render build
 
 unix: clean render bitmaps
-	@cd builder && make build_unix
+	@cd builder && make build_unix clean
 
 windows: clean render bitmaps
-	@cd builder && make build_windows
+	@cd builder && make build_windows clean
 
 .PHONY: all
 
@@ -15,7 +15,7 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && $(MAKE)
+	@cd builder && make setup build clean
 
 .ONESHELL:
 SHELL:=/bin/bash
