@@ -1,10 +1,10 @@
 all: clean render build
 
 unix: clean render bitmaps
-	@cd builder && make build_unix
+	@cd builder && make build_unix clean
 
 windows: clean render bitmaps
-	@cd builder && make build_windows
+	@cd builder && make build_windows clean
 
 .PHONY: all
 
