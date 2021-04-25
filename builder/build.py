@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from xbpkg.configure import get_config
-from xbpkg.generator import xbuild, wbuild, build, Info
+from xcbuild.configure import get_config
+from xcbuild.generator import xbuild, wbuild, build, Info
 
 parser = argparse.ArgumentParser(
     prog="xcursor_pro_builder",
