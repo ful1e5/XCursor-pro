@@ -8,10 +8,11 @@ from typing import Dict, List, Union
 from clickgen.util import chdir
 
 
-def add_missing_xcursor(directory: Union[str, Path]) -> None:
+def add_missing_xcursor(directory: Path) -> None:
     """Add missing `XCursor` to the Unix cursor package.
 
-    :directory: (Path|str) directory where XCursors are available.
+    :param directory: directory where XCursors are available.
+    :type directory: ``str`` or ``Path``
     """
 
     symlinks: List[Dict[str, Union[str, List[str]]]] = [
