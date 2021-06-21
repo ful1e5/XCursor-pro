@@ -13,6 +13,15 @@ from .symlinks import add_missing_xcursor
 
 
 class Info(NamedTuple):
+    """Theme basic information.
+
+    :param name: Theme title.
+    :type name: ``str``
+
+    :param comment: quick information about theme.
+    :type comment: ``str``
+    """
+
     name: str
     comment: str
 
