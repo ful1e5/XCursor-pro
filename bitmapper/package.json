@@ -1,6 +1,6 @@
 {
   "name": "xcursor-pro-bitmapper",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "index.js",
   "scripts": {
     "watch": "nodemon --inspect src/index.ts",

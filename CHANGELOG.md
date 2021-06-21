@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.1.2]- 27 Mar 2021
+
 ### Added
 
 - setup & clean target updated
@@ -60,7 +62,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.1...main
+[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.2...main
+[v1.1.2]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0
