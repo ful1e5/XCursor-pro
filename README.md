@@ -57,7 +57,7 @@
 
 # Pro!
 
-**XCursor Pro** is modern, simple and elegent cursor theme for **Linux ninja**, Who are using barebone cursors for their DE/WM. This cursor is also available for Windows user.
+**XCursor Pro** is modern, simple and elegant cursor theme for **Linux ninja**, Who are using barebone cursors for their DE/WM. This cursor is also available for Windows user.
 
 #### Cursor Sizes
 
@@ -111,13 +111,13 @@ sudo mv XCursor-Pro /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="XCursor Pro Dark" src="https://i.imgur.com/NvcbQH8.png">
+  <img title="XCursor Pro Dark" src="https://imgur.com/CHnLdNN.png">
   </br>
   <sub>XCursor Pro Dark Cursors</sub>
 </p>
 
 <p align="center">
-  <img title="XCursor Pro Light" src="https://imgur.com/UI3TO1Z.png">
+  <img title="XCursor Pro Light" src="https://i.imgur.com/UI2VNrB.png">
   </br>
   <sub>XCursor Pro Light Cursors</sub>
 </p>

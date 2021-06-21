@@ -9,55 +9,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
--   setup & clean target updated
--   Removes setup.py
--   Uniform docs & compact generator code
+- setup & clean target updated
+- Removes setup.py
+- Uniform docs & compact generator code
 
 ### Changed
 
--   relative import module
--   build module import fix inside `build.py`
--   Move builder module to `xcbuild`
+- relative import module
+- Animated cursors (`left_ptr_watch` & `wait`) clock hand colors changed to outline colors
+- build module import fix inside `build.py`
+- Move builder module to `xcbuild`
 
 ## [v1.1.1]- 27 Mar 2021
 
 ### Added
 
--   **2 Space** format in `bitmapper`
--   clickgen typing inside `xbpkg/generator.py`
--   Use `sphinx` docsstring style inside `xbpkg`
--   Linting error fixed inside `builder/xbpkg`
--   clean builder cache on every make commands
+- **2 Space** format in `bitmapper`
+- clickgen typing inside `xbpkg/generator.py`
+- Use `sphinx` docsstring style inside `xbpkg`
+- Linting error fixed inside `builder/xbpkg`
+- clean builder cache on every make commands
 
 ### Changed
 
--   Remove python3 **virtualenv** form `builder/Makefile`
--   Compact XCursor-Pro build commands inside `builder/Makefile`
+- Remove python3 **virtualenv** form `builder/Makefile`
+- Compact XCursor-Pro build commands inside `builder/Makefile`
 
 ## [v1.1.0]- 15 Mar 2021
 
 ### Added
 
--   XCursor-Pro-Light added
--   `.svg` files with key colors (Green & Blue)
--   `core` module separated in bitmapper
--   Make commands for XCursor-Pro-Light
+- XCursor-Pro-Light added
+- `.svg` files with key colors (Green & Blue)
+- `core` module separated in bitmapper
+- Make commands for XCursor-Pro-Light
 
 ### Changed
 
--   Clean builder package cache in `builder/Makefile` **clean** target
--   `.svg` files format with `xmllint`
--   Corner resize cursors are inverted fixed (ful1e5/apple_cursor#39 **merged**)
--   Dynamic cursors build in `xbpkg`
--   `builder` docs updated
+- Clean builder package cache in `builder/Makefile` **clean** target
+- `.svg` files format with `xmllint`
+- Corner resize cursors are inverted fixed (ful1e5/apple_cursor#39 **merged**)
+- Dynamic cursors build in `xbpkg`
+- `builder` docs updated
 
 ## [v1.0.0] - 12 Feb 2021
 
 ### Added
 
--   Initial release 🎊
--   Logo and badges
--   CI/CD Pipelines
+- Initial release 🎊
+- Logo and badges
+- CI/CD Pipelines
 
 [unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.1...main
 [v1.1.1]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.0...v1.1.1
