@@ -49,3 +49,13 @@ uninstall:
 	@fi
 
 reinstall: uninstall install
+
+# generates binaries
+BIN_DIR = ../bin
+release: bitmaps themes
+	@rm -rf bin && mkdir bin
+	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@cd themes && tar -czvf $(BIN_DIR)/XCursor-Pro-Dark.tar.gz XCursor-Pro-Dark/ && cd ..
+	@cd themes && zip -r $(BIN_DIR)/XCursor-Pro-Dark-Windows.zip XCursor-Pro-Dark-Windows && cd ..
+	@cd themes && tar -czvf $(BIN_DIR)/XCursor-Pro-Light.tar.gz XCursor-Pro-Light/ && cd ..
+	@cd themes && zip -r $(BIN_DIR)/XCursor-Pro-Light-Windows.zip XCursor-Pro-Light-Windows && cd ..
