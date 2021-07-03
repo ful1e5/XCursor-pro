@@ -9,8 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Support button inside PLING.bbcode product page
-- compress binaries using `make release`
+- Support button inside `PLING.bbcode` product page
+- `make prepare` command for preparing bibata binaries
+- `pyrightconfig.json` init
+
+### Changed
+
+- Removed **clean** target from `builder/Makefile`
+- Compact code inside `builder/*`
+- Remove `setup.py`
+- Builder code moved to `src`
+- Import `src` module directly inside `build.py`
+- `Makefile` build commands re-arrange with groups
 
 ## [v1.1.2]- 21 Jun 2021
 
