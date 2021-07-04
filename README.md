@@ -111,13 +111,13 @@ sudo mv XCursor-Pro /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="XCursor Pro Dark" src="https://imgur.com/CHnLdNN.png">
+  <img title="XCursor Pro Dark" src="https://imgur.com/xU23azm.png">
   </br>
   <sub>XCursor Pro Dark Cursors</sub>
 </p>
 
 <p align="center">
-  <img title="XCursor Pro Light" src="https://i.imgur.com/UI2VNrB.png">
+  <img title="XCursor Pro Light" src="https://imgur.com/tgOj0pt.png">
   </br>
   <sub>XCursor Pro Light Cursors</sub>
 </p>
