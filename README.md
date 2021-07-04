@@ -1,6 +1,6 @@
 <!-- Branding -->
 <p align="center">
-    <img src="https://i.imgur.com/BOhL2Hw.png" />
+  <img src="https://imgur.com/gJh2PHy.png" width="150" />
 </p>
 
 <p align="center">
