@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `make prepare` command for preparing bibata binaries
 - `pyrightconfig.json` init
 - Bigger action icons inside `context-menu` ,`copy`, `crossed_circle` and `question_arrow`
+- skinny `hand2` lines fixed
 
 ### Changed
 
