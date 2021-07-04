@@ -52,7 +52,7 @@ reinstall: uninstall install
 
 # generates binaries
 BIN_DIR = ../bin
-release: bitmaps themes
+prepare: bitmaps themes
 	@rm -rf bin && mkdir bin
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
 	@cd themes && tar -czvf $(BIN_DIR)/XCursor-Pro-Dark.tar.gz XCursor-Pro-Dark/ && cd ..
