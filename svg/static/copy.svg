@@ -9,8 +9,8 @@
     <rect x="88" y="20" width="91" height="91" rx="19" fill="url(#paint0_linear)"/>
   </g>
   <g filter="url(#filter2_d)">
-    <path d="M159 58.75H108V71.25H159V58.75Z" fill="#0000FF"/>
-    <path d="M139.875 40H127.125V90H139.875V40Z" fill="#0000FF"/>
+    <path d="M159 58.75H108V71.25H159V58.75Z" fill="white"/>
+    <path d="M139.875 40H127.125V90H139.875V40Z" fill="white"/>
   </g>
   <defs>
     <filter id="filter0_d" x="39" y="9.5" width="146.134" height="177.593" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
