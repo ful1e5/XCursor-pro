@@ -7,6 +7,7 @@ interface Config {
 
 const black = "#000000";
 const white = "#FFFFFF";
+const red = "#FF0000";
 
 const config: Config[] = [
   {
@@ -21,6 +22,13 @@ const config: Config[] = [
     color: {
       base: white,
       outline: black,
+    },
+  },
+  {
+    themeName: "XCursor-Pro-Red",
+    color: {
+      base: red,
+      outline: white,
     },
   },
 ];

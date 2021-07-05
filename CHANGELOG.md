@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- XCursor-Pro-Red init 🎊
 - Support button inside `PLING.bbcode` product page
 - `make prepare` command for preparing bibata binaries
 - `pyrightconfig.json` init
