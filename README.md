@@ -81,6 +81,7 @@
     <img title="XCursor Pro Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
   </a>
 </p>
+
 ### Manual Install
 
 #### Linux/X11
@@ -109,6 +110,12 @@ sudo mv XCursor-Pro /usr/share/icons/
 > Check Figma file [here](https://www.figma.com/file/aiDqxzFmwl8qtaFyQEE3kk/XCursor-Pro?node-id=0%3A1)
 
 <!-- Preview -->
+
+<p align="center">
+  <img title="XCursor Pro Red" src="https://imgur.com/dAx7Tko.png">
+  </br>
+  <sub>XCursor Pro Red Cursors</sub>
+</p>
 
 <p align="center">
   <img title="XCursor Pro Dark" src="https://imgur.com/xU23azm.png">
