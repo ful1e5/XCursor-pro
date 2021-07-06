@@ -1,19 +1,16 @@
 bitmaps_dir = "../bitmaps"
 
-all: clean setup build
+all: setup build
 
 .PHONY: all
 
 .ONESHELL:
 SHELL:=/bin/bash
 
-THEMES = Dark Light
+THEMES = Dark Light Red
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
-
-clean:
-	@rm -rf bxbuild/__pycache__
 
 setup:
 	@python3 -m pip install clickgen --user

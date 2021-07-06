@@ -64,6 +64,7 @@ jobs:
         run: |
           tar -cvzf XCursor-Pro-Dark.tar.gz themes/XCursor-Pro-Dark
           tar -cvzf XCursor-Pro-Light.tar.gz themes/XCursor-Pro-Light
+          tar -cvzf XCursor-Pro-Red.tar.gz themes/XCursor-Pro-Red
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
@@ -83,6 +84,12 @@ jobs:
           name: XCursor-Pro-Light
           path: XCursor-Pro-Light.tar.gz
 
+      - name: Uploading `XCursor-Pro-Red` UNIX Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: XCursor-Pro-Red
+          path: XCursor-Pro-Red.tar.gz
+
       - name: Uploading `XCursor-Pro-Dark` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
@@ -94,3 +101,9 @@ jobs:
         with:
           name: XCursor-Pro-Light-Windows
           path: themes/XCursor-Pro-Light-Windows/*
+
+      - name: Uploading `XCursor-Pro-Red` Windows Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: XCursor-Pro-Red-Windows
+          path: themes/XCursor-Pro-Red-Windows/*

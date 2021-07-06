@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.1.3]- 6 Jul 2021
+
+### Added
+
+- XCursor-Pro-Red init 🎊
+- Support button inside `PLING.bbcode` product page
+- `make prepare` command for preparing bibata binaries
+- `pyrightconfig.json` init
+- Bigger action icons inside `context-menu` ,`copy`, `crossed_circle` and `question_arrow`
+- skinny `hand2` lines fixed
+
+### Changed
+
+- Removed **clean** target from `builder/Makefile`
+- Compact code inside `builder/*`
+- Remove `setup.py`
+- Builder code moved to `src`
+- Import `src` module directly inside `build.py`
+- `Makefile` build commands re-arrange with groups
+
 ## [v1.1.2]- 21 Jun 2021
 
 ### Added
@@ -66,6 +86,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.2]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.0.0...v1.1.0
-[v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0
-[v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0
 [v1.0.0]: https://github.com/ful1e5/XCursor-pro/tree/v1.0.0

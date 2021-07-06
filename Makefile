@@ -1,10 +1,10 @@
 all: clean render build
 
 unix: clean render bitmaps
-	@cd builder && make build_unix clean
+	@cd builder && make build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows clean
+	@cd builder && make build_windows
 
 .PHONY: all
 
@@ -15,7 +15,7 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && make setup build clean
+	@cd builder && make setup build
 
 .ONESHELL:
 SHELL:=/bin/bash
@@ -49,3 +49,14 @@ uninstall:
 	@fi
 
 reinstall: uninstall install
+
+# generates binaries
+BIN_DIR = ../bin
+THEMES = Dark Light Red
+prepare: bitmaps themes
+	@rm -rf bin && mkdir bin
+	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@cd themes
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/XCursor-Pro-$(theme).tar.gz XCursor-Pro-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/XCursor-Pro-$(theme)-Windows.zip XCursor-Pro-$(theme)-Windows;)
+	@cd ..

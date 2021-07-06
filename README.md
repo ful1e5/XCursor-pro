@@ -1,6 +1,6 @@
 <!-- Branding -->
 <p align="center">
-    <img src="https://i.imgur.com/BOhL2Hw.png" />
+  <img src="https://imgur.com/gJh2PHy.png" width="150" />
 </p>
 
 <p align="center">
@@ -81,6 +81,7 @@
     <img title="XCursor Pro Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
   </a>
 </p>
+
 ### Manual Install
 
 #### Linux/X11
@@ -111,13 +112,19 @@ sudo mv XCursor-Pro /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="XCursor Pro Dark" src="https://imgur.com/CHnLdNN.png">
+  <img title="XCursor Pro Red" src="https://imgur.com/dAx7Tko.png">
+  </br>
+  <sub>XCursor Pro Red Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="XCursor Pro Dark" src="https://imgur.com/xU23azm.png">
   </br>
   <sub>XCursor Pro Dark Cursors</sub>
 </p>
 
 <p align="center">
-  <img title="XCursor Pro Light" src="https://i.imgur.com/UI2VNrB.png">
+  <img title="XCursor Pro Light" src="https://imgur.com/tgOj0pt.png">
   </br>
   <sub>XCursor Pro Light Cursors</sub>
 </p>
