@@ -1,63 +1,10 @@
-<!-- Branding -->
-<p align="center">
-  <img src="https://imgur.com/gJh2PHy.png" width="150" />
-</p>
+# XCursor-Pro
 
-<p align="center">
-    💅 Modern X11 Cursor Theme
-</p>
+**XCursor Pro** is modern, simple and elegant cursor theme for **Linux ninja**, Who are using barebone cursors for their Linux DE/WM or Windows.
 
-<!-- Badges -->
-<p align="center">
-  <!-- First Row -->
-  <a href="https://github.com/ful1e5/XCursor-pro/actions">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/XCursor-pro/workflows/build/badge.svg" width="102" />
-  </a>
-
-  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
-    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
-  </a>
-
-  <a href="https://github.com/ful1e5/clickgen">
-    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
-  </a>
-
-  <!-- Second Row -->
-  <br />
-  <a href="https://github.com/ful1e5/XCursor-pro/releases">
-    <img alt="XCursor Pro release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/XCursor-pro?include_prereleases" />
-  </a>
-
-  <a href="https://github.com/ful1e5/XCursor-pro/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/ful1e5/XCursor-pro?color=0081FB" />
-  </a>
-
-  <br />
-  <a href="https://www.pling.com/p/1481466#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
-  </a>
-
-  <a href="https://www.pling.com/p/1481466#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
-  </a>
-
-  <a href="https://www.python.org/">
-    <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
-  </a>
- <!-- Fourth Row -->
-  <br />
-  <a href="https://github.com/ful1e5">
-    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
-  </a>
-</p>
-
----
-
-<!-- Intro -->
-
-# Pro!
-
-**XCursor Pro** is modern, simple and elegant cursor theme for **Linux ninja**, Who are using barebone cursors for their DE/WM. This cursor is also available for Windows user.
+[![Build](https://github.com/ful1e5/XCursor-pro/workflows/build/badge.svg)](https://github.com/ful1e5/XCursor-pro/actions)
+[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/xcursor-pro/badge)](https://www.codefactor.io/repository/github/ful1e5/xcursor-pro)
+[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
 
 #### Cursor Sizes
 
@@ -74,7 +21,7 @@
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Quick install
+### Quick install
 
 <p align="center">
   <a href="https://www.pling.com/p/1481466/" >
@@ -236,7 +183,7 @@ make windows WIN_SIZE=96            # Provide only one pixel-size
 
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/XCursor-Pro/issues) on the Github issues page.
+Bugs should be reported [here](https://github.com/ful1e5/XCursor-Pro/issues) on the Github issues page.
 
 <!-- Help -->
 
@@ -249,24 +196,3 @@ You can create a **issue**, I will help you. 🙂
 # Contributing
 
 Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
-
-<!-- Support -->
-
-## Support
-
-Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
-
-> For more support
-
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-
-<!-- Ninja  -->
-
-<h1 align="center">
-  ( `ω´ )۶▬ι═══════ﺤ
-</h1>
-<p align="center">
-  <sub>I'm Using Katana </sub>
-</p>
