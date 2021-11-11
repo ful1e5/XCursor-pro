@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.1.4]- 11 Nov 2021
+
 ### Added
 
 - `make` commands with `THEME_PREFIX` variable
@@ -95,7 +97,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.2...main
+[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.4...main
+[v1.1.4]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.3...v1.1.4
+[v1.1.3]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.2...v1.1.3
 [v1.1.2]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.0.0...v1.1.0
