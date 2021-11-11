@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - prettified bitmapping logs
 - removed emojis from README.md
 - cleanup badges from README.md
+- sponsor using liberapay
 
 ## [v1.1.3]- 6 Jul 2021
 
