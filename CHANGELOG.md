@@ -13,14 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `make` commands with `THEME_PREFIX` variable
 - distributed pling products docs inside `pling` directory
+- sponsorships updated
 
 ### Changed
 
 - Distributed binaries in `bin` directory
 - prettified bitmapping logs
-- removed emojis from README.md
-- cleanup badges from README.md
-- sponsor using liberapay
+- tidy docs inside README.md
 
 ## [v1.1.3]- 6 Jul 2021
 
