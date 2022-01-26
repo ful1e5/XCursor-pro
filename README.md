@@ -50,6 +50,26 @@ sudo mv XCursor-Pro /usr/share/icons/
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **XCursor-Pro Cursors**.
 5. Click '**Apply**'.
 
+### Uninstall
+
+#### Linux/X11
+
+```bash
+# For local users
+rm ~/.icons/XCursor-Pro-*
+
+# For all users
+sudo rm /usr/share/icons/XCursor-Pro-*
+```
+
+#### Windows
+
+1. Go to **Registry Editor** by typing the same in the _start search box_.
+2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
+3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
+4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _XCursor-Pro Cursors_ and click `Delete`.
+5. Click '**yes**' when prompted.
+
 #### Preview:
 
 > Check Figma file [here](https://www.figma.com/file/aiDqxzFmwl8qtaFyQEE3kk/XCursor-Pro?node-id=0%3A1)

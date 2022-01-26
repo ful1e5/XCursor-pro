@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Uninstall docs ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
+
+### Changed
+
+-
+
 ## [v1.1.4]- 11 Nov 2021
 
 ### Added
