@@ -23,9 +23,9 @@
 
 ### Quick install
 
-XCursor Pro Dark: [https://www.pling.com/p/1481466](https://www.pling.com/p/1481466)
-XCursor Pro Light: [https://www.pling.com/p/1639833](https://www.pling.com/p/1639833)
-XCursor Pro Red: [https://www.pling.com/p/1639834](https://www.pling.com/p/1639834)
+- XCursor Pro Dark: [https://www.pling.com/p/1481466](https://www.pling.com/p/1481466)
+- XCursor Pro Light: [https://www.pling.com/p/1639833](https://www.pling.com/p/1639833)
+- XCursor Pro Red: [https://www.pling.com/p/1639834](https://www.pling.com/p/1639834)
 
 ### Manual Install
 
