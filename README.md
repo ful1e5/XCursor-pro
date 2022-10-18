@@ -2,9 +2,7 @@
 
 **XCursor Pro** is modern, simple and elegant cursor theme for **Linux ninja**, Who are using barebone cursors for their Linux DE/WM or Windows.
 
-[![Build](https://github.com/ful1e5/XCursor-pro/workflows/build/badge.svg)](https://github.com/ful1e5/XCursor-pro/actions)
-[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/xcursor-pro/badge)](https://www.codefactor.io/repository/github/ful1e5/xcursor-pro)
-[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
+[![build](https://github.com/ful1e5/XCursor-pro/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/XCursor-pro/actions/workflows/build.yml)
 
 #### Cursor Sizes
 

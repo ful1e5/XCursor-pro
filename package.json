@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cbmp": "ful1e5/cbmp"
+  },
+  "scripts": {
+    "render:xcursor-pro-dark": "npx cbmp -d 'svg' -n 'XCursor-Pro-Dark' -bc '#000000' -oc '#FFFFFF'",
+    "render:xcursor-pro-light": "npx cbmp -d 'svg' -n 'XCursor-Pro-Light' -bc '#FFFFFF' -oc '#000000'",
+    "render:xcursor-pro-red": "npx cbmp -d 'svg' -n 'XCursor-Pro-Red' -bc '#FF0000' -oc '#FFFFFF'",
+    "render": "yarn render:xcursor-pro-dark && yarn render:xcursor-pro-light && yarn render:xcursor-pro-red",
+    "build:xcursor-pro-dark": "ctgen build.toml -d 'bitmaps/XCursor-Pro-Dark' -n 'XCursor-Pro-Dark' -c 'Modern dark XCursors.'",
+    "build:xcursor-pro-light": "ctgen build.toml -d 'bitmaps/XCursor-Pro-Light' -n 'XCursor-Pro-Light' -c 'Modern light XCursors.'",
+    "build:xcursor-pro-red": "ctgen build.toml -d 'bitmaps/XCursor-Pro-Red' -n 'XCursor-Pro-Red' -c 'Modern Red XCursors.'",
+    "build": "yarn build:xcursor-pro-dark && yarn build:xcursor-pro-light && yarn build:xcursor-pro-red"
+  }
+}
