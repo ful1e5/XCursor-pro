@@ -141,7 +141,7 @@ x_hotspot = 51
 y_hotspot = 24
 x11_name = 'left_ptr'
 win_name = 'Default'
-x11_symlinks = ['arrow', 'default']
+x11_symlinks = ['arrow', 'default', 'top_left_arrow']
 
 [cursors.left_ptr_watch]
 png = 'left_ptr_watch-*.png'
