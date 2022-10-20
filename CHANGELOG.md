@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.1]- 20 October 2022
+
+### Changed
+
+- Windows Diagonal cursor fixed #12
+
 ## [v2.0.0]- 19 October 2022
 
 ### Added
@@ -105,7 +111,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.0...main
+[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.1...main
+[v2.0.0]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.4...v2.0.0
 [v1.1.4]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.3...v1.1.4
 [v1.1.3]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.2...v1.1.3

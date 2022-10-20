@@ -26,7 +26,7 @@ x11_symlinks = ['fleur', 'size_all']
 [cursors.bottom_left_corner]
 png = 'bottom_left_corner.png'
 x11_name = 'bottom_left_corner'
-win_name = 'Diagonal_1'
+win_name = 'Diagonal_2'
 x11_symlinks = [
   'fcf1c3c7cd4491d801f1e1c78f100000',
   'sw-resize',
@@ -40,7 +40,7 @@ x11_symlinks = [
 [cursors.bottom_right_corner]
 png = 'bottom_right_corner.png'
 x11_name = 'bottom_right_corner'
-win_name = 'Diagonal_2'
+win_name = 'Diagonal_1'
 x11_symlinks = [
   'c7088f0f3e6c8088236ef8e1e3e70000',
   'top_left_corner',
