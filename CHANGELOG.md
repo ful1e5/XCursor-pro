@@ -7,112 +7,116 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### :warning: Changes for Developers/Package Distributors
+
+-   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
+
 ## [v2.0.1]- 20 October 2022
 
 ### Changed
 
-- Windows Diagonal cursor fixed #12
+-   Windows Diagonal cursor fixed #12
 
 ## [v2.0.0]- 19 October 2022
 
 ### Added
 
-- Refactor: build with `clickgen v2` #21
-- Add cursor top_left_arrow
-- Uninstall docs ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
-- ci: support `clickgen v2` build with cross platform test
+-   ci: support `clickgen v2` build with cross platform test
+-   Uninstall docs ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
+-   Add cursor top_left_arrow
+-   Refactor: build with `clickgen v2` #21
 
 ## [v1.1.4]- 11 November 2021
 
 ### Added
 
-- `make` commands with `THEME_PREFIX` variable
-- distributed pling products docs inside `pling` directory
-- sponsorships updated
+-   sponsorships updated
+-   distributed pling products docs inside `pling` directory
+-   `make` commands with `THEME_PREFIX` variable
 
 ### Changed
 
-- Distributed binaries in `bin` directory
-- prettified bitmapping logs
-- tidy docs inside README.md
+-   tidy docs inside README.md
+-   prettified bitmapping logs
+-   Distributed binaries in `bin` directory
 
 ## [v1.1.3]- 6 July 2021
 
 ### Added
 
-- XCursor-Pro-Red init 🎊
-- Support button inside `PLING.bbcode` product page
-- `make prepare` command for preparing XCursor-Pro binaries
-- `pyrightconfig.json` init
-- Bigger action icons inside `context-menu` ,`copy`, `crossed_circle` and `question_arrow`
-- skinny `hand2` lines fixed
+-   skinny `hand2` lines fixed
+-   Bigger action icons inside `context-menu` ,`copy`, `crossed_circle` and `question_arrow`
+-   `pyrightconfig.json` init
+-   `make prepare` command for preparing XCursor-Pro binaries
+-   Support button inside `PLING.bbcode` product page
+-   XCursor-Pro-Red init 🎊
 
 ### Changed
 
-- Removed **clean** target from `builder/Makefile`
-- Compact code inside `builder/*`
-- Remove `setup.py`
-- Builder code moved to `src`
-- Import `src` module directly inside `build.py`
-- `Makefile` build commands re-arrange with groups
+-   `Makefile` build commands re-arrange with groups
+-   Import `src` module directly inside `build.py`
+-   Builder code moved to `src`
+-   Remove `setup.py`
+-   Compact code inside `builder/*`
+-   Removed **clean** target from `builder/Makefile`
 
 ## [v1.1.2]- 21 June 2021
 
 ### Added
 
-- setup & clean target updated
-- Removes setup.py
-- Uniform docs & compact generator code
+-   Uniform docs & compact generator code
+-   Removes setup.py
+-   setup & clean target updated
 
 ### Changed
 
-- relative import module
-- Animated cursors (`left_ptr_watch` & `wait`) clock hand colors changed to outline colors
-- build module import fix inside `build.py`
-- Move builder module to `xcbuild`
+-   Move builder module to `xcbuild`
+-   build module import fix inside `build.py`
+-   Animated cursors (`left_ptr_watch` & `wait`) clock hand colors changed to outline colors
+-   relative import module
 
 ## [v1.1.1]- 27 March 2021
 
 ### Added
 
-- **2 Space** format in `bitmapper`
-- clickgen typing inside `xbpkg/generator.py`
-- Use `sphinx` docsstring style inside `xbpkg`
-- Linting error fixed inside `builder/xbpkg`
-- clean builder cache on every make commands
+-   clean builder cache on every make commands
+-   Linting error fixed inside `builder/xbpkg`
+-   Use `sphinx` docsstring style inside `xbpkg`
+-   clickgen typing inside `xbpkg/generator.py`
+-   **2 Space** format in `bitmapper`
 
 ### Changed
 
-- Remove python3 **virtualenv** form `builder/Makefile`
-- Compact XCursor-Pro build commands inside `builder/Makefile`
+-   Compact XCursor-Pro build commands inside `builder/Makefile`
+-   Remove python3 **virtualenv** form `builder/Makefile`
 
 ## [v1.1.0]- 15 March 2021
 
 ### Added
 
-- XCursor-Pro-Light added
-- `.svg` files with key colors (Green & Blue)
-- `core` module separated in bitmapper
-- Make commands for XCursor-Pro-Light
+-   Make commands for XCursor-Pro-Light
+-   `core` module separated in bitmapper
+-   `.svg` files with key colors (Green & Blue)
+-   XCursor-Pro-Light added
 
 ### Changed
 
-- Clean builder package cache in `builder/Makefile` **clean** target
-- `.svg` files format with `xmllint`
-- Corner resize cursors are inverted fixed (ful1e5/apple_cursor#39 **merged**)
-- Dynamic cursors build in `xbpkg`
-- `builder` docs updated
+-   `builder` docs updated
+-   Dynamic cursors build in `xbpkg`
+-   Corner resize cursors are inverted fixed (ful1e5/apple_cursor#39 **merged**)
+-   `.svg` files format with `xmllint`
+-   Clean builder package cache in `builder/Makefile` **clean** target
 
 ## [v1.0.0] - 12 February 2021
 
 ### Added
 
-- Initial release 🎊
-- Logo and badges
-- CI/CD Pipelines
+-   CI/CD Pipelines
+-   Logo and badges
+-   Initial release 🎊
 
 [unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.1...main
-[v2.0.0]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.0...v2.0.1
+[v2.0.1]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.4...v2.0.0
 [v1.1.4]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.3...v1.1.4
 [v1.1.3]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.2...v1.1.3
