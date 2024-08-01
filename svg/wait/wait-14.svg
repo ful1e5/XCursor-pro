@@ -1,0 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2939_894)">
+<g filter="url(#filter0_d_2939_894)">
+<rect x="14.0801" y="14.08" width="227.84" height="227.84" rx="64" fill="#00FF00"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M140.529 132.523L181.158 127.987C181.158 127.987 182.343 126.673 182.171 124.215C181.999 121.758 180.643 120.622 180.643 120.622L140.235 121.771C140.893 123.233 141.308 124.834 141.426 126.526C141.574 128.637 141.244 130.671 140.529 132.523Z" fill="#0000FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131.328 114.071L124.901 59.2892C124.901 59.2892 123.647 57.7694 121.417 57.9645C119.186 58.1597 118.215 59.8741 118.215 59.8741L121.398 114.94C122.889 114.215 124.534 113.746 126.283 113.593C128.033 113.44 129.735 113.616 131.328 114.071Z" fill="#0000FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127.5 119.983C123.348 119.983 119.983 123.348 119.983 127.5C119.983 131.651 123.348 135.017 127.5 135.017C131.651 135.017 135.017 131.651 135.017 127.5C135.017 123.348 131.651 119.983 127.5 119.983ZM109.244 127.5C109.244 117.418 117.417 109.244 127.5 109.244C137.582 109.244 145.756 117.418 145.756 127.5C145.756 137.582 137.582 145.756 127.5 145.756C117.417 145.756 109.244 137.582 109.244 127.5Z" fill="#0000FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127.5 54.4773C87.1707 54.4773 54.4773 87.1707 54.4773 127.5C54.4773 167.829 87.1707 200.523 127.5 200.523C167.829 200.523 200.523 167.829 200.523 127.5C200.523 87.1707 167.829 54.4773 127.5 54.4773ZM33 127.5C33 75.3091 75.3091 33 127.5 33C179.691 33 222 75.3091 222 127.5C222 179.691 179.691 222 127.5 222C75.3091 222 33 179.691 33 127.5Z" fill="#0000FF"/>
+</g>
+<defs>
+<filter id="filter0_d_2939_894" x="1.28008" y="6.39996" width="253.44" height="253.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="5.12"/>
+<feGaussianBlur stdDeviation="6.4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2939_894"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2939_894" result="shape"/>
+</filter>
+<clipPath id="clip0_2939_894">
+<rect width="256" height="256" fill="white"/>
+</clipPath>
+</defs>
+</svg>
