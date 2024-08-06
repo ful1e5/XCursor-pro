@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 -   Windows Diagonal cursor fixed #12
+-   De-framed animated cursors to static SVG files
 
 ## [v2.0.0]- 19 October 2022
 
