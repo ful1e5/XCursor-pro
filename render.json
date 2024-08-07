@@ -1,0 +1,26 @@
+{
+  "XCursor-Pro-Dark": {
+    "dir": "svg",
+    "out": "bitmaps/XCursor-Pro-Dark",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  },
+  "XCursor-Pro-Light": {
+    "dir": "svg",
+    "out": "bitmaps/XCursor-Pro-Light",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" }
+    ]
+  },
+  "XCursor-Pro-Red": {
+    "dir": "svg",
+    "out": "bitmaps/XCursor-Pro-Red",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF0000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  }
+}

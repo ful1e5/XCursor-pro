@@ -50,27 +50,27 @@ N/A
 
 ### Windows Cursor Size:
 
-- <kbd>16x16</kbd> - Small
-- <kbd>24x24</kbd> - Regular
-- <kbd>32x32</kbd> - Large
-- <kbd>48x48</kbd> - Extra Large
+-   <kbd>48x48</kbd> - Extra Large
+-   <kbd>32x32</kbd> - Large
+-   <kbd>24x24</kbd> - Regular
+-   <kbd>16x16</kbd> - Small
 
 ## Colors:
 
 ### XCursor-Pro-Red
 
-- Base Color - `#FF0000` (Red)
-- Outline Color - `#FFFFFF` (White)
+-   Outline Color - `#FFFFFF` (White)
+-   Base Color - `#FF0000` (Red)
 
 ### XCursor-Pro-Dark
 
-- Base Color - `#000000` (Black)
-- Outline Color - `#FFFFFF` (White)
+-   Outline Color - `#FFFFFF` (White)
+-   Base Color - `#000000` (Black)
 
 ### XCursor-Pro-Light
 
-- Base Color - `#FFFFFF` (White)
-- Outline Color - `#000000` (Black)
+-   Outline Color - `#000000` (Black)
+-   Base Color - `#FFFFFF` (White)
 
 ## How to get it
 
@@ -81,9 +81,9 @@ You can download latest `stable` & `development` releases from
 
 ### Quick install
 
-- XCursor Pro Dark: [https://www.pling.com/p/1481466](https://www.pling.com/p/1481466)
-- XCursor Pro Light: [https://www.pling.com/p/1639833](https://www.pling.com/p/1639833)
-- XCursor Pro Red: [https://www.pling.com/p/1639834](https://www.pling.com/p/1639834)
+-   XCursor Pro Red: [https://www.pling.com/p/1639834](https://www.pling.com/p/1639834)
+-   XCursor Pro Light: [https://www.pling.com/p/1639833](https://www.pling.com/p/1639833)
+-   XCursor Pro Dark: [https://www.pling.com/p/1481466](https://www.pling.com/p/1481466)
 
 ## Installing XCursor-Pro Cursor
 
@@ -133,25 +133,26 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 #### Notes
 
-- XCursor-Pro build configuration and cursor hotspot settings are bundled in the `build.toml` file.
-- Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
-  excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
-- yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
-  you don't need that. If you want to develop/modify XCursor-Pro's colors, and bitmaps, or generate a png
-  file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
-- Since XCursor-Pro variants are designed similarly, they share the same hotspot settings so a
-  single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
-  to change the following options in `ctgen` to build the appropriate variant:
-  - **-d**: bitmaps directory
-  - **-n**: The name you want to give to the generated theme.
-  - **-c**: Theme comment.
-  - See `ctgen --help` for all available options.
+    -   See `ctgen --help` for all available options.
+    -   **-c**: Theme comment.
+    -   **-n**: The name you want to give to the generated theme.
+    -   **-d**: bitmaps directory
+    to change the following options in `ctgen` to build the appropriate variant:
+    single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
+
+-   Since XCursor-Pro variants are designed similarly, they share the same hotspot settings so a
+    file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
+    you don't need that. If you want to develop/modify XCursor-Pro's colors, and bitmaps, or generate a png
+-   yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
+    excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
+-   Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
+-   XCursor-Pro build configuration and cursor hotspot settings are bundled in the `build.toml` file.
 
 ### Build prerequisites
 
-- Python version 3.7 or higher
-- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
-- [yarn](https://github.com/yarnpkg/yarn)
+-   [yarn](https://github.com/yarnpkg/yarn)
+-   [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
+-   Python version 3.7 or higher
 
 ### Quick start
 
