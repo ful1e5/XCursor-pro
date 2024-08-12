@@ -59,8 +59,8 @@ win_name = 'Link'
 
 [cursors.left_ptr]
 png = 'left_ptr.png'
-x_hotspot = 123
-y_hotspot = 11
+x_hotspot = 63
+y_hotspot = 20
 win_name = 'Pointer'
 
 [cursors.left_ptr_watch]

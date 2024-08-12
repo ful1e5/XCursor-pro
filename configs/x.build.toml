@@ -13,7 +13,7 @@ platforms = 'x11'
 x11_sizes = [16, 20, 22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 x_hotspot = 128
 y_hotspot = 128
-x11_delay = 35
+x11_delay = 50
 
 
 [cursors.all-scroll]
@@ -129,8 +129,8 @@ x11_symlinks = [
 
 [cursors.left_ptr]
 png = 'left_ptr.png'
-x_hotspot = 123
-y_hotspot = 11
+x_hotspot = 63
+y_hotspot = 20
 x11_name = 'left_ptr'
 x11_symlinks = ['arrow', 'default', 'top_left_arrow']
 
