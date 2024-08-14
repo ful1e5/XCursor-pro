@@ -4,22 +4,17 @@
 
 [![build](https://github.com/ful1e5/XCursor-pro/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/XCursor-pro/actions/workflows/build.yml)
 
-## XCursor-pro needs your Input
+## Notes
 
-Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
-XCursor-pro and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
-or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
-I will gladly look into it and post your avatar in the project's README.
+-   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on [Figma](https://www.figma.com/file/aiDqxzFmwl8qtaFyQEE3kk/XCursor-Pro?node-id=0%3A1).
 
-I appreciate all the wonderful people who patronize and sponsoring my work.
+<!-- If you're interested, you can learn more about "sponsor-spotlight" on
+ https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
 
-## Sponsors
+![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
-
-N/A
+-   **2024-06-24**: [b02ffaf](https://github.com/ful1e5/XCursor-pro/commit/b02ffaf9ebdf87e110283230331c0cfcf007dddc) Partitioned cursor build configuration into multiple files according to platform:
+    `build.toml` -> `configs/win_lg.build.toml`, `configs/win_rg.build.toml`, `configs/win_xl.build.toml`, `configs/x.build.toml`.
 
 ---
 
@@ -27,14 +22,12 @@ N/A
 ![XCursor-Pro-Dark](https://imgur.com/xU23azm.png)
 ![XCursor-Pro-Light](https://imgur.com/tgOj0pt.png)
 
-> **Note**
-> All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
-> [Figma](https://www.figma.com/file/aiDqxzFmwl8qtaFyQEE3kk/XCursor-Pro?node-id=0%3A1).
-
 ## Cursor Sizes
 
 ### Xcursor Sizes:
 
+<kbd>16</kbd>
+<kbd>20</kbd>
 <kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
@@ -50,10 +43,13 @@ N/A
 
 ### Windows Cursor Size:
 
--   <kbd>48x48</kbd> - Extra Large
--   <kbd>32x32</kbd> - Large
--   <kbd>24x24</kbd> - Regular
--   <kbd>16x16</kbd> - Small
+| size | Regular (× ²⁄₃) | Large (× ⁴⁄₅) | Extra-Large (× 1) |
+| ---: | --------------: | ------------: | ----------------: |
+|   32 |     21.333 → 22 |     25.6 → 26 |                32 |
+|   48 |              32 |     38.4 → 39 |                48 |
+|   64 |     42.666 → 43 |     51.2 → 52 |                64 |
+|   96 |              64 |     76.8 → 77 |                96 |
+|  128 |     85.333 → 86 |   102.4 → 103 |               128 |
 
 ## Colors:
 
@@ -131,80 +127,71 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 ## Build From Source
 
-#### Notes
+### Prerequisites
 
-    -   See `ctgen --help` for all available options.
-    -   **-c**: Theme comment.
-    -   **-n**: The name you want to give to the generated theme.
-    -   **-d**: bitmaps directory
-    to change the following options in `ctgen` to build the appropriate variant:
-    single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
-
--   Since XCursor-Pro variants are designed similarly, they share the same hotspot settings so a
-    file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
-    you don't need that. If you want to develop/modify XCursor-Pro's colors, and bitmaps, or generate a png
--   yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
-    excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
--   Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
--   XCursor-Pro build configuration and cursor hotspot settings are bundled in the `build.toml` file.
-
-### Build prerequisites
-
--   [yarn](https://github.com/yarnpkg/yarn)
--   [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
 -   Python version 3.7 or higher
+-   [clickgen](https://github.com/ful1e5/clickgen)>=2.2.5 (`pip install clickgen`)
+-   [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start
 
-1. Install [build prerequisites](#build-prerequisites) on your system
+1. Install [build prerequisites](#prerequisites) on your system
 2. `git clone https://github.com/ful1e5/XCursor-pro`
-3. `cd XCursor-pro && yarn build`
-4. See [Installing XCursor-Pro Cursor](#installing-xcursor-pro-cursor).
+3. `cd XCursor-pro`
+4. `yarn install`
+5. `yarn generate`
+6. See [Installing XCursor-Pro Cursor](#installing-xcursor-pro-cursor).
 
-### Building
+### Getting Started
 
-> **Note**
-> Bitmaps are already generated in the `bitmaps` directory and **managed by the maintainer**
-> (do not edit them directly).
+Once you have the [build prerequisites](#prerequisites) installed, You can personalize colors,
+customize sizes, change target platforms, and more. This process involves using external tools,
+as this repository only contains SVG files and configuration for these tools:
 
-First make sure you installed the [build prerequisites](#build-prerequisites).
-Now that you have the dependencies, you can try build individual themes from bitmaps and
-customize sizes, target platform, and etc. with the `ctgen` CLI (packed with `clickgen`).
+-   [cbmp](https://github.com/ful1e5/cbmp): Used for customizing colors and generating PNG files.
+-   [ctgen](https://github.com/ful1e5/clickgen): Used for customizing sizes and building XCursor and Windows Cursors.
 
-#### `yarn build` aberration
+You can refer to the README of each tool for more information on their command-line options.
 
-Here are the default commands we used to build the XCursor-Pro's variants and packed them into `yarn build`:
+#### Crafting Your XCursor-pro Cursor
+
+The process of creating custom cursor themes involves two main steps:
+
+1. Rendering SVG files to PNG files.
+2. Building cursor themes from PNG files.
+
+#### Customize Colors
+
+`cbmp` provides three options for changing colors:
+
+1. `-bc`: Base color, which replaces the `#00FF00` color in the SVG.
+2. `-oc`: Outlined color, which replaces the `#0000FF` color in the SVG.
+3. `-wc` (optional): Watch Background color, which replaces the `#FF0000` color in the SVG.
 
 ```bash
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Dark' -n 'XCursor-Pro-Dark' -c 'Modern dark XCursors.'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Light' -n 'XCursor-Pro-Light' -c 'Modern light XCursors.'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Red' -n 'XCursor-Pro-Red' -c 'Modern Red XCursors.'
+npx cbmp [...] -bc "<hex>" -oc "<hex>" -wc "<hex>"
 ```
 
-Afterwards, the themes can be found in the `themes` directory.
+Alternatively, you can provide a JSON configuration file to render SVG files, which contains a sequence of `cbmp` commands:
+
+```bash
+npx cbmp render.json
+```
 
 #### Customize Sizes
-
-> **Note**
-> You can change the cursor size up to 200 because pngs are rendered with 200x200.
-> If the cursor is resized by more than rendered png size, the final cursor will be blurred.
 
 ##### Customize Windows Cursor size
 
 To build Windows cursor with size `16`:
 
-> **Warning**
-> Windows cursor supports only one size, if multiple sizes are given with `-s` the first size will
-> be considered in build.
-
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/XCursor-Pro-Light' -n 'XCursor-Pro-Light' -c 'Modern light XCursor with size 16'
+ctgen configs/win_rg.build.toml -s 16 -d "bitmaps/XCursor-Pro-Dark" -n "XCursor-Pro-Dark" -c "Modern, Proffesional Windows Cursors with size 16"
 ```
 
 You can also customize output directory with `-o` option:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/XCursor-Pro-Light' -o 'out' -n 'XCursor-Pro-Light' -c 'Modern light XCursor with size 16'
+ctgen configs/win_rg.build.toml -s 16 -d "bitmaps/XCursor-Pro-Dark" -o "out" -n "XCursor-Pro-Dark" -c "Modern, Proffesional Windows Cursors with size 16"
 ```
 
 ##### Customize XCursor size
@@ -212,74 +199,96 @@ ctgen build.toml -s 16 -p windows -d 'bitmaps/XCursor-Pro-Light' -o 'out' -n 'XC
 To build XCursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p x11 -d 'bitmaps/XCursor-Pro-Light' -n 'XCursor-Pro-Light' -c 'Modern light XCursor with size 16'
+ctgen configs/x.build.toml -s 16 -d "bitmaps/XCursor-Pro-Dark" -n "XCursor-Pro-Dark" -c "Modern, Proffesional XCursors with size 16"
 ```
 
 You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/XCursor-Pro-Light' -n 'XCursor-Pro-Light' -c 'Modern light XCursor'
-```
-
-#### Customize Colors
-
-To customize XCursor-Pro's color you have to install node dependencies with `yarn install` command.
-After installing dependencies you can customize the colors via `npx cbmp` Node CLI App which packed with
-[cbmp](https://github.com/ful1e5/cbmp) node package.
-
-##### `yarn render` aberration
-
-Here are the default commands we used for generating the XCursor-Pro's bitmaps and packed them into `yarn render`:
-
-```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Dark' -bc '#000000' -oc '#FFFFFF'
-npx cbmp -d 'svg' -n 'XCursor-Pro-Light' -bc '#FFFFFF' -oc '#000000'
-npx cbmp -d 'svg' -n 'XCursor-Pro-Red' -bc '#FF0000' -oc '#FFFFFF'
+ctgen configs/x.build.toml -s 16 18 24 32 -d "bitmaps/XCursor-Pro-Dark" -n "XCursor-Pro-Dark" -c "Modern, Proffesional XCursors"
 ```
 
 #### Examples
 
-Lets generate modern XCursor-Pro with green base color and black outline:
+Lets generate XCursor-Pro Cursor with green and black colors:
 
 ```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Hacker' -bc '#00FE00' -oc '#000000'
+npx cbmp -d "svg" -o "bitmaps/XCursor-Pro-Hacker" -bc "#00FE00" -oc "#000000"
 ```
 
 After rendering custom color you have to build cursor through `ctgen`:
 
-```bash
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Hacker' -n 'XCursor-Pro-Hacker' -c 'Green and black XCursor-Pro cursors.'
-```
+-   XCursor:
+    ```bash
+    ctgen configs/x.build.toml -d "bitmaps/XCursor-Pro-Hacker" -n "XCursor-Pro-Hacker" -c "Green and Black XCursors."
+    ```
+-   Windows Regular Cursor:
+    ```bash
+    ctgen configs/win_rg.build.toml -d "bitmaps/XCursor-Pro-Hacker" -n "XCursor-Pro-Hacker" -c "Green and Black Regular Windows Cursors."
+    ```
+-   Windows Large Cursor:
+    ```bash
+    ctgen configs/win_lg.build.toml -d "bitmaps/XCursor-Pro-Hacker" -n "XCursor-Pro-Hacker" -c "Green and Black Large Windows Cursors."
+    ```
+-   Windows Extra Large Cursor:
+    ```bash
+    ctgen configs/win_xl.build.toml -d "bitmaps/XCursor-Pro-Hacker" -n "XCursor-Pro-Hacker" -c "Green and Black Extra Large Windows Cursors."
+    ```
 
 Afterwards, Generated theme can be found in the `themes` directory.
 
 ###### XCursor-Pro Gruvbox
 
 ```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Gruvbox' -bc '#282828' -oc '#EBDBB2'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Gruvbox' -n 'XCursor-Pro-Gruvbox' -c 'Groovy XCursor-Pro cursors.'
+npx cbmp -d "svg" -o "bitmaps/XCursor-Pro-Gruvbox" -bc "#282828" -oc "#EBDBB2"
+
+ctgen configs/x.build.toml -d "bitmaps/XCursor-Pro-Gruvbox" -n "XCursor-Pro-Gruvbox" -c "Groovy XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/XCursor-Pro-Gruvbox" -n "XCursor-Pro-Gruvbox" -c "Groovy Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/XCursor-Pro-Gruvbox" -n "XCursor-Pro-Gruvbox" -c "Groovy Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/XCursor-Pro-Gruvbox" -n "XCursor-Pro-Gruvbox" -c "Groovy Windows Extra Large Cursors."
 ```
 
 ###### XCursor-Pro Solarized Dark
 
 ```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Solarized-Dark' -bc '#002b36' -oc '#839496'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Solarized-Dark' -n 'XCursor-Pro-Solarized-Dark' -c 'Solarized Dark XCursor-Pro cursors.'
+npx cbmp -d "svg" -o "bitmaps/XCursor-Pro-Solarized-Dark" -bc "#002b36" -oc "#839496"
+
+ctgen configs/x.build.toml -d "bitmaps/XCursor-Pro-Solarized-Dark" -n "XCursor-Pro-Solarized-Dark" -c "Solarized Dark XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/XCursor-Pro-Solarized-Dark" -n "XCursor-Pro-Solarized-Dark" -c "Solarized Dark Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/XCursor-Pro-Solarized-Dark" -n "XCursor-Pro-Solarized-Dark" -c "Solarized Dark Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/XCursor-Pro-Solarized-Dark" -n "XCursor-Pro-Solarized-Dark" -c "Solarized Dark Windows Extra Large Cursors."
 ```
 
 ###### XCursor-Pro Solarized Light
 
 ```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Solarized-Light' -bc '#839496' -oc '#002b36'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Solarized-Light' -n 'XCursor-Pro-Solarized-Light' -c 'Solarized Light XCursor-Pro cursors.'
+npx cbmp -d "svg" -o "bitmaps/XCursor-Pro-Solarized-Light" -bc "#839496" -oc "#002b36"
+
+ctgen configs/x.build.toml -d "bitmaps/XCursor-Pro-Solarized-Light" -n "XCursor-Pro-Solarized-Light" -c "Solarized Light XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/XCursor-Pro-Solarized-Light" -n "XCursor-Pro-Solarized-Light" -c "Solarized Light Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/XCursor-Pro-Solarized-Light" -n "XCursor-Pro-Solarized-Light" -c "Solarized Light Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/XCursor-Pro-Solarized-Light" -n "XCursor-Pro-Solarized-Light" -c "Solarized Light Windows Extra Large Cursors."
 ```
 
 ###### XCursor-Pro Dracula
 
 ```bash
-npx cbmp -d 'svg' -n 'XCursor-Pro-Dracula' -bc '#282a36' -oc '#f8f8f2'
-ctgen build.toml -d 'bitmaps/XCursor-Pro-Dracula' -n 'XCursor-Pro-Dracula' -c 'Dracula XCursor-Pro cursors.'
+npx cbmp -d "svg" -o "bitmaas/XCursor-Pro-Dracula" -bc "#282a36" -oc "#f8f8f2"
+
+ctgen configs/x.build.toml -d "bitmaps/XCursor-Pro-Dracula" -n "XCursor-Pro-Dracula" -c "Dracula XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/XCursor-Pro-Dracula" -n "XCursor-Pro-Dracula" -c "Dracula Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/XCursor-Pro-Dracula" -n "XCursor-Pro-Dracula" -c "Dracula Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/XCursor-Pro-Dracula" -n "XCursor-Pro-Dracula" -c "Dracula Windows Extra Large Cursors."
 ```
+
+## Testing Cursor
+
+There are several websites that allow you to test your cursor states by hovering over buttons. This can be very useful when developing or verifying the behavior of a cursor. The following websites cover many of the most commonly used cursors, although they may not include all available options.
+
+-   [Cursor-Test](https://vibhorjaiswal.github.io/Cursor-Test/)
+-   [Mozilla CSS Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+
+For a blueprint for creating XCursors, you may also want to refer to [Cursor-demo](https://wiki.tcl-lang.org/page/Cursor+demo).
 
 # Bugs
 

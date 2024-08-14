@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.2]- 13 August 2024
+
 ### :warning: Changes for Developers/Package Distributors
 
 -   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
@@ -32,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   build script renamed (`release.sh` -> `build.sh`)
 -   Use 'xz' for better compression in `build.sh` script
 -   De-framed animated cursors to static SVG files
+
 ## [v2.0.1]- 20 October 2022
 
 ### Changed
@@ -137,7 +140,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Logo and badges
 -   Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.1...main
+[unreleased]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.2...main
+[v2.0.2]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.1...v2.0.2
 [v2.0.1]: https://github.com/ful1e5/XCursor-pro/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.4...v2.0.0
 [v1.1.4]: https://github.com/ful1e5/XCursor-pro/compare/v1.1.3...v1.1.4
