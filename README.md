@@ -1,4 +1,4 @@
-# XCursor-Pro
+![XCursor](https://github.com/user-attachments/assets/08aa6367-cb0e-4e2e-9d24-71c6839dfdd7)
 
 **XCursor Pro** is modern, simple and elegant cursor theme for **Linux ninja**, Who are using barebone cursors for their Linux DE/WM or Windows.
 
@@ -18,9 +18,9 @@
 
 ---
 
-![XCursor-Pro-Red](https://imgur.com/dAx7Tko.png)
-![XCursor-Pro-Dark](https://imgur.com/xU23azm.png)
-![XCursor-Pro-Light](https://imgur.com/tgOj0pt.png)
+![XCursor-Red](https://github.com/user-attachments/assets/f347cef1-c070-4067-a99d-8c3eefe49e72)
+![XCursor-Light](https://github.com/user-attachments/assets/d0f23776-bab4-4759-8297-01d6965ce62e)
+![XCursor-Dark](https://github.com/user-attachments/assets/08cc4d60-64ce-49ed-bdd9-eca305f7e092)
 
 ## Cursor Sizes
 
